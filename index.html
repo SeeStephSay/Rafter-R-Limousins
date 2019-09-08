@@ -1,0 +1,127 @@
+<!--  
+Exercise - Add CSS
+
+Add HTML and CSS to create a webpage for a business (real or imagined). The following are the minimum requirements for your page; feel free to add more HTML or CSS if you have additional time. 
+
+HTML requirements:
+* three divs - check 
+* a span and a paragraph - check 
+* two headers - check
+* a link - check 
+* an image - check 
+* a list - check
+* a class (which should be put on multiple elements) - check
+* two ids - check 
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <!-- HEAD -->
+    
+    <head>
+      <title>Rafter R Limousins | Stratford, OK</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Noto+Serif:400+700&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <!-- BODY -->
+    
+    <body>
+      
+      <!-- HEADER -->
+      
+      <header>
+        <div class="full-width">
+          <div class="half-width">
+            <img src="img/logo.png" alt="Rafter R Limousins logo" />
+            </div> <!--half-width closure-->
+          <div class="half-width">
+        
+        <!-- NAVIGATION -->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#stock">Stock</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+        </div>  
+            <h2>Former home of the <span>world-renowned</span> Master Plan, Master Design, &amp; Guthrie.</h2>
+        </div> <!--should this go somewhere above?-->
+      </header>
+      
+      
+      <!-- MAIN -->
+      <main>
+        
+        <!--ABOUT -->
+        <section id="about">
+                <div class="full-width">
+                    <h2>About Us</h2>
+                    <div class="half-width"><p>We are a small ranch, situated on approximately 500 acres, in small-town Stratford, Oklahoma. We are owned by Richard Atzbach - who is also a local pastor and the owner of the Car Care Center in town. We are proud to house approximately 50 head of cattle, with 10 full-blood Limousins.</p>
+                    </div>
+                    <div class="half-width"><p>A severe drought several years ago led to us having to sell off most of our Limousin herd, but we are in the process of building our stock back up now. Limousin cattle have always been Richard's passion, and he would love to discuss them with you anytime if you'd like to give him a call!</p>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- STOCK -->
+        <section id="stock">
+            <div class="full-width">
+                <div class="third-width">
+                  <img src="img/close-up.png" alt="Cows close-up" />
+                  <h4>Ready for our close-ups!</h4>
+                  <p>We got our picture taken on our very first day at the ranch.</p>
+                </div>
+                <div class="third-width">
+                    <img src="img/one-cow.png" alt="One cow" />
+                    <h4>Mmm, tasty!</h4>
+                    <p>I was hungry after my long journey home from the cattle sale.</p>
+                  </div>
+                  <div class="third-width">
+                      <img src="img/cow-in-fence.png" alt="Cow in fence" />
+                      <h4>Hello!</h4>
+                      <p>Finally! Home, sweet, home.</p>
+                    </div>
+            </div>
+       </section>
+        
+        <!-- CONTACT -->
+        <footer id="contact">
+            <div class="full-width">
+                <div class="half-width">
+                    <img id="contact-img" src="img/contact-image.png" alt="Cows behind fence" />
+                </div>
+                <div class="half-width" id="contact-info">
+                    <h2>Like what you see?</h2>
+                    <h3 id="email-header">Come visit us!</h3>
+
+                        <!-- EMAIL -->
+                        <!-- Check with Melissa about email and domain name details. Also update title and header. -->
+                  <a href="mailto:richard@rafterrlimousin.com" target="_blank">
+                  <img id="envelope" src="img/envelope.png" alt="Envelope" />
+                    richard[@]rafterrlimousin.com
+                  </a>
+
+                        <!-- SOCIAL MEDIA -->
+                  <h3 id="socialmedia-header">Or, find me online.</h3>
+                    <ul>
+                       <li>
+                          <a href="https://www.facebook.com/richard.atzbach" target="_blank">
+                           <img src="img/facebook.png" alt="Facebook icon" />                     
+                          </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+      </main>
+      
+      
+      
+    </body>
+        
+</html>

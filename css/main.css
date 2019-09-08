@@ -1,0 +1,205 @@
+/* 
+
+CSS requirements:
+* a tag selector - check
+* a class selector - check 
+* an id selector - check 
+* use the following attributes: height, - check 
+ width, -check
+  border, - check 
+   color, - check
+    background-color, - check 
+     font-size - check 
+* add margin and padding to two different elements - check 
+
+Stretch Goal: Use online resources to learn a little about the CSS properties of 'display' and 'position'. Incorporate them into your page.
+
+*/
+
+/***** BASE STYLES *****/
+
+body {
+  font-family: 'Noto Serif', serif;
+  color: #393939;
+}
+
+#about, #stock, #contact {
+  height: 600px;
+}
+
+/***** GRID *****/
+
+.full-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 600px;
+  float: left;
+}
+
+.third-width {
+  width: 400px;
+  float: left;
+}
+
+/***** HEADER *****/
+
+header {
+	height: 800px;
+	background: url('../img/herd.png');
+	background-size: cover;
+}
+
+nav {
+	float: right;
+	padding: 75px 25px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+	color: #DAA520; 
+  padding-left: 80px;
+}
+  
+header h2 {
+    width: 1000px; 
+    clear: both;
+    font-family: 'Bree Serif', serif; 
+    font-size: 72px;
+    line-height: 80px;
+    color: #DAA520;
+    padding: 20px 0 20px 25px;
+}
+
+    header h2 span {
+      font-family: 'Bree Serif', serif;
+    }
+
+/***** ABOUT *****/
+
+#about .full-width {
+  padding: 40px 0;
+}
+
+#about {
+    background: url('../img/about.png');
+    background-size: cover;
+}
+
+#about h2 {
+  font-family: 'Bree Serif', serif;
+  font-size: 36px;
+  padding-left: 50px;
+}
+
+#about p{
+  font-size: 25pt;
+  color: #393939;
+  line-height: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/***** STOCK *****/
+
+#stock {
+  background-color: #393939;
+  text-align: center;
+  color: #DAA520;
+}
+
+#stock .full-width {
+  padding: 115px 0;
+}
+
+#stock img{
+  padding-bottom: 30px;
+  /*** border: 3px solid #DAA520;  if I wanna do a border, I'll have to put the padding at the top of the headers below the pictures, instead. ***/ 
+}
+
+#stock h4 {
+  font-size: 16px;
+  line-height: 24px;
+  width: 190px;
+  margin: 0 auto;
+}
+
+#stock p {
+  line-height: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/*** CONTACT ***/
+
+#contact {
+  background: url('../img/about.png');
+  background-size: cover;
+}
+
+#contact .full-width {
+	padding: 110px 0;
+}
+
+#contact img#contact-img {
+	margin-left: 25px;
+	border: 12px solid #393939;
+}
+
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+	padding-left: 115px;
+}
+
+#contact #envelope {
+    padding: 0 0 0 115px;
+}
+
+#contact h2 {
+	font-family: 'Bree Serif', serif;
+	font-size: 42px;
+	line-height: 44px;
+}
+
+#contact #email-header {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 44px;
+	margin: -30px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+	font-weight: bold;
+	font-size: 29px;
+	line-height: 44px;
+	margin: 40px 0 0 0;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #393939;
+	font-weight: bold;
+	font-size:28px;
+}
+
+#contact ul {
+	list-style: none;
+}
+
+#contact ul li {
+	display: inline-block;
+}
+
+#contact ul img {
+	font-size: 32px;
+	padding-right: 56px;
+}
